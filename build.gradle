@@ -1,0 +1,17 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-grizzly2:2.26'
+    testCompile 'org.glassfish.jersey.inject:jersey-hk2:2.26'
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}
