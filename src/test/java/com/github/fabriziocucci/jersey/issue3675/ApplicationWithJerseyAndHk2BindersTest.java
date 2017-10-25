@@ -84,7 +84,7 @@ public class ApplicationWithJerseyAndHk2BindersTest extends JerseyTest {
 	
 	private static void assertThatBinderIsConfigured(CountDownLatch countDownLatch) throws InterruptedException {
 		boolean isBinderConfigured = countDownLatch.await(5L, TimeUnit.SECONDS);
-		Assert.assertTrue("HK2 Binder is not configured", isBinderConfigured);
+		Assert.assertTrue("Binder is not configured", isBinderConfigured);
 	}
 	
 }
